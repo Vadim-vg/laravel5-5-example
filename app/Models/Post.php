@@ -14,7 +14,7 @@ class Post extends Model
 
     /**
      * The event map for the model.
-     *
+     * Вывести список ресурса.
      * @var array
      */
     protected $dispatchesEvents = [
@@ -24,7 +24,7 @@ class Post extends Model
 
     /**
      * The attributes that are mass assignable.
-     *
+     * Атрибуты, которые можно назначать массово.
      * @var array
      */
     protected $fillable = [
@@ -33,7 +33,7 @@ class Post extends Model
 
     /**
      * One to Many relation
-     *
+     * Отношение один ко многим
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function user()
@@ -43,7 +43,7 @@ class Post extends Model
 
     /**
      * Many to Many relation
-     *
+     * Отношение многие ко многим
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
     public function tags()
@@ -53,7 +53,7 @@ class Post extends Model
 
     /**
      * One to Many relation
-     *
+     * Отношение один ко многим
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function comments()
@@ -63,7 +63,7 @@ class Post extends Model
 
     /**
      * One to Many relation
-     *
+     * Отношение один ко многим
      * @return \Illuminate\Database\Eloquent\Relations\hasMany
      */
     public function validComments()
@@ -75,7 +75,7 @@ class Post extends Model
 
     /**
      * One to Many relation
-     *
+     * Отношение один ко многим
      * @return \Illuminate\Database\Eloquent\Relations\hasMany
      */
     public function parentComments()
@@ -85,7 +85,7 @@ class Post extends Model
 
     /**
      * Many to Many relation
-     *
+     * Отношение многие ко многим
      * @return \Illuminate\Database\Eloquent\Relations\belongsToMany
      */
     public function categories()
