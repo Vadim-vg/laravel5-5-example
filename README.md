@@ -1,25 +1,25 @@
-## Laravel 5-5 example ##
+## Laravel 8 example rus ##
 
-**Laravel 5-5 example** is a tutorial application.
+**Laravel 8 example** Это учебное приложение.
 
-### Installation ###
+### Установка ###
 
-* type `git clone https://github.com/bestmomo/laravel5-5-example.git projectname` to clone the repository 
-* type `cd projectname`
-* type `composer install`
-* type `composer update`
-* copy *.env.example* to *.env*
-* type `php artisan key:generate`to generate secure key in *.env* file
-* if you use MySQL in *.env* file :
-   * set DB_CONNECTION
-   * set DB_DATABASE
-   * set DB_USERNAME
-   * set DB_PASSWORD
-* if you use sqlite :
-   * type `touch database/database.sqlite` to create the file
-* type `php artisan vendor:publish --provider="Bestmomo\LaravelEmailConfirmation\ServiceProvider" --tag="confirmation:migrations"` to publish email confirmation migration
-* type `php artisan migrate --seed` to create and populate tables
-* edit *.env* for emails configuration
+* команда `git clone https://github.com/bestmomo/laravel8-example.git projectname` клонирует репозиторий с помощью командной строки
+* команда `cd projectname` перейдёт в папку проекта
+* команда `composer install` установит зависимости с помощью программы "composer" (произойдёт установка всех зависимостей проекта указанных в файле `composer.json` с версиями указанными в `composer.lock`)
+* команда `composer update`
+* скопировать *.env.example* в *.env*
+* команда `php artisan key:generate` cгенерирует ключ безопасности в файле *.env*
+* Если вы используете MySQL в файле *.env* укажите параметры подключения:
+* Тип БД DB_CONNECTION=mysql
+   * название БД DB_DATABASE
+   * имя пользователя DB_USERNAME
+   * пароль пользователя DB_PASSWORD
+* Если вы используете sqlite :
+   * команда `touch database/database.sqlite` создаст файл
+* команда `php artisan vendor:publish --provider="Bestmomo\LaravelEmailConfirmation\ServiceProvider" --tag="confirmation:migrations"` опубликует миграцию подтверждения электронной почты
+* команда `php artisan migrate --seed` создаст и заполнит таблицы
+* редактируйте *.env* для конфигурирования электронной почты
 
 ### Include ###
 
